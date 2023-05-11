@@ -1,0 +1,150 @@
+body {
+  background-image: url("./img/4419384.jpg");
+  background-position: cover;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+
+.credit-card-form {
+  background-color: white;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  border: 3px solid black;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 50px;
+  width: 550px;
+  height: 550px;
+  border-radius: 8px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  padding-left: 2px;
+  padding-right: 2px;
+  display: flex;
+    flex-direction: column;
+  }
+  
+  
+  h1 {
+    font-size: 28px;
+    font-family: Arial, sans-serif;
+    text-align: right;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    color: black;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+  }
+
+
+  .credit-card-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 30px;
+  }
+  
+
+  .boton-confirmar {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px; /* Añadir relleno al botón */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; /* Asegurarse de que el botón se ajuste al ancho del contenido */
+    border-radius: 5px; 
+    width: 300px;
+    align-self: center;
+    margin-top: 50px;
+   }
+
+ label {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: black;
+    align-self: flex-start;
+  }
+
+ input {
+  border: solid;
+  border-color: darkgray;
+  border-width: 1px;
+  border-radius: 8px;
+  padding: 8px;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message-Error {
+    margin-top: 5px;
+  }
+  
+
+  .number-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .name-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .data-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .date-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+  }
+  
+  .date {
+    display:flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .date > input {
+    width: 40%;
+  }
+  .dates-cvv {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+  }
+  
+  
+ input::placeholder {
+  color: lightgray;
+  font-size: 15px;
+  }
+
