@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Validador de tarjeta de crédito</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="credit-card-form" id="register-form">
+    <h1>Registra tu tarjeta</h1>
+    <div class="form">
+      <div class="credit-card-form-container">
+        <div class="number-card-container">
+           <label for="credit-card-number" class="label-number">Número de la tarjeta de crédito:</label>
+          <div class="input-container">
+           <input 
+             type="text" 
+             id="credit-card-number" 
+             name="credit-card-number" 
+             class="input-number"
+             placeholder="ej. 1234 5678 9012 3456" />
+           <span id="message-Error" class="message-Error"></span>
+          </div>
+        </div>
+        <div class="name-card-container">
+        <label for="card-holder-name" class="label-name">Nombre en la tarjeta de crédito:</label>
+
+        
+        <input 
+           type="text" 
+           id="card-holder-name" 
+           name="card-holder-name" 
+           class="input-name"
+           placeholder="ej. Kathy Encalada" />
+        </div>
+
+      <div class="data-container">
+       <div class="date-container">
+         <label for="expires-date" class="label-date">Fecha de Vcto. (MM/YY):</label>
+         <div class="date">
+          <input 
+            type="text" 
+            id="expires-date-month" 
+            name="expires-date-month" 
+            class="input-date"
+            placeholder="MM" />
+          <input  
+           type="text" 
+           id="expires-date-year" 
+           name="expires-date-year" 
+           class="input-date"
+           placeholder="YY" />
+         </div> 
+        </div>
+
+       <div class="dates-cvv"> 
+        <label for="codigo-tarjeta" class="lavel-cvv">CVV:</label>
+        <input 
+           type="text" 
+           id="codigo-tarjeta" 
+           name="codigo-tarjeta" 
+           class="input-cvv"
+           placeholder="ej.860" />
+       </div>
+      </div>
+         <div class="input-number"></div>
+         <button class="boton-confirmar" id="confirm-btn">Confirmar</button>
+      </div>
+    </div>
+  </div> 
+ 
+  <div id="message"></div>
+  <div id="masked-number"></div>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
